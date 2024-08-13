@@ -15,8 +15,13 @@ export default function JavaScript() {
           iframeDivRef.current
         ) {
           const height = eventData.details?.height
-          iframeDivRef.current.style.height = `${height}px`
-          iframeRef.current.style.height = `${height}px`
+          iframeDivRef.current.style.height = `${height * 0.77}px`
+          iframeRef.current.style.height = `${height * 0.77}px`
+          setTimeout(() => {
+            if (iframeDivRef.current && iframeDivRef.current.contentWindow) {
+              iframeDivRef.current.contentWindow.scrollTo(0, 40)
+            }
+          }, 500)
         }
       }
     }
