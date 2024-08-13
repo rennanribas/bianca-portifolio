@@ -1,14 +1,24 @@
 {
-  "short_name": "BLK Design System React",
-  "name": "BLK Design System React by Creative Tim",
+  "short_name": "Bianca Reis",
+  "name": "Bianca Reis Website",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "biancaicon.ico",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
+    },
+    {
+      "src": "biancalogo.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "biancalogo.png",
+      "type": "image/png",
+      "sizes": "512x512"
     }
   ],
-  "start_url": "./index.html",
+  "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"

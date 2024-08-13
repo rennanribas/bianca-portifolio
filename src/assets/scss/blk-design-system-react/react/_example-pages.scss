@@ -1,9 +1,11 @@
 // style for the landing page
-.index-page .squares{
-  @include linear-gradient($info-states, $info);
+.index-page .squares {
+  @include linear-gradient($primary-states, $primary);
 }
-.register-page, .section.section-signup{
-  .squares, .square {
+.register-page,
+.section.section-signup {
+  .squares,
+  .square {
     @include linear-gradient($primary-states, $primary);
   }
 }
