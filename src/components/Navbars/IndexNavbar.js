@@ -1,30 +1,12 @@
-/*!
-
-=========================================================
-* BLK Design System React - v1.2.2
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/blk-design-system-react
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/blk-design-system-react/blob/main/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
+import { useLanguage } from 'contexts/LanguageContext'
 import React from 'react'
 import { Link } from 'react-router-dom'
-// reactstrap components
 import {
-  Button,
   Collapse,
+  Dropdown,
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
-  UncontrolledDropdown,
   NavbarBrand,
   Navbar,
   NavItem,
@@ -34,12 +16,16 @@ import {
   Row,
   Col,
   UncontrolledTooltip,
+  UncontrolledDropdown,
 } from 'reactstrap'
 
 export default function IndexNavbar() {
   const [collapseOpen, setCollapseOpen] = React.useState(false)
   const [collapseOut, setCollapseOut] = React.useState('')
   const [color, setColor] = React.useState('navbar-transparent')
+  const { language, changeLanguage } = useLanguage()
+  const [dropdownOpen, setDropdownOpen] = React.useState(false)
+  const toggle = () => setDropdownOpen((prevState) => !prevState)
   React.useEffect(() => {
     window.addEventListener('scroll', changeColor)
     return function cleanup() {
@@ -124,6 +110,29 @@ export default function IndexNavbar() {
             </Row>
           </div>
           <Nav navbar>
+            <UncontrolledDropdown nav>
+              <DropdownToggle
+                caret
+                color='default'
+                data-toggle='dropdown'
+                nav
+                onClick={(e) => e.preventDefault()}
+              >
+                <i className='tim-icons icon-world' />
+                {language.toUpperCase()}
+              </DropdownToggle>
+              <DropdownMenu className='dropdown-with-icons'>
+                <DropdownItem onClick={() => changeLanguage('en')}>
+                  <i className='flag-icon flag-icon-gb' /> English
+                </DropdownItem>
+                <DropdownItem onClick={() => changeLanguage('pt')}>
+                  <i className='flag-icon flag-icon-br' /> Português
+                </DropdownItem>
+                <DropdownItem onClick={() => changeLanguage('it')}>
+                  <i className='flag-icon flag-icon-it' /> Italiano
+                </DropdownItem>
+              </DropdownMenu>
+            </UncontrolledDropdown>
             <NavItem className='p-0'>
               <NavLink
                 data-placement='bottom'

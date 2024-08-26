@@ -1,9 +1,11 @@
+import useTranslation from 'hooks/useTranslation'
 import React, { useRef, useEffect } from 'react'
 import { Container, Row, Col } from 'reactstrap'
 
-export default function JavaScript() {
+export default function Resume() {
   const iframeRef = useRef(null)
   const iframeDivRef = useRef(null)
+  const t = useTranslation()
 
   useEffect(() => {
     const handleResize = (event) => {
@@ -46,26 +48,20 @@ export default function JavaScript() {
           <Row className='justify-content-between align-items-top'>
             <Col className='mb-5 mb-lg-0' lg='5'>
               <div className='title'>
-                <h1>Quem eu sou</h1>
+                <h1>{t('whoIAm')}</h1>
               </div>
               <h3 className='text-white font-weight-light mb-1'>
-                Educadora física
+                {t('physicalEducationTeacher')}
               </h3>
               <p className='text-white mt-1'>
-                Formada em 2014, pela Universidade de Mogi das Cruzes, conto com
-                a experiência de mais de 10 anos de prática física voltada ao
-                condicionamento físico principalmente através do treinamento
-                resistido com pesos e funcional.
+                {t('physicalEducationDescription')}
               </p>
 
               <h3 className='text-white font-weight-light mb-1 mt-4'>
-                Especialista em Treinamento para Grupos Especiais
+                {t('specialistTitle')}
               </h3>
               <p className='text-white mt-1'>
-                Pós graduada em Medicina do Esporte da Atividade Física, conto
-                também com a experiência prática de trabalhar com grupos
-                especiais, ajudando a manter ou melhorar o condicionamento que
-                busca uma melhora da qualidade de vida em grupos especiais.
+                {t('specialistFullDescription')}
               </p>
             </Col>
             <Col lg='6'>

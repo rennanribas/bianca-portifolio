@@ -15,12 +15,14 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
+import useTranslation from 'hooks/useTranslation'
 import React from 'react'
 
 // reactstrap components
 import { Container } from 'reactstrap'
 
 export default function PageHeader() {
+  const t = useTranslation()
   return (
     <div className='page-header header-filter'>
       <div className='squares square1' />
@@ -32,10 +34,8 @@ export default function PageHeader() {
       <div className='squares square7' />
       <Container>
         <div className='content-center brand'>
-          <h1 className='h1-seo'>Personal Trainer</h1>
-          <h3 className='d-none d-sm-block'>
-            Especialista em treinamento físico para mulheres de todas as idades
-          </h3>
+          <h1 className='h1-seo'>{t('personalTrainer')}</h1>
+          <h3 className='d-none d-sm-block'>{t('specialistDescription')}</h3>
         </div>
       </Container>
     </div>

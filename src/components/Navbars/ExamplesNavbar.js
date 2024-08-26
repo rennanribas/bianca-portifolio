@@ -71,7 +71,7 @@ export default function ExamplesNavbar() {
         <div className='navbar-translate'>
           <NavbarBrand to='/' id='navbar-brand' tag={Link}>
             <span>Bianca Reis - </span>
-            Educadora Física
+            Personal Trainer
           </NavbarBrand>
           <UncontrolledTooltip placement='bottom' target='navbar-brand'>
             Coded by Rennan Ribas
