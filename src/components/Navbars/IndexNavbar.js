@@ -3,7 +3,6 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import {
   Collapse,
-  Dropdown,
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
@@ -24,8 +23,6 @@ export default function IndexNavbar() {
   const [collapseOut, setCollapseOut] = React.useState('')
   const [color, setColor] = React.useState('navbar-transparent')
   const { language, changeLanguage } = useLanguage()
-  const [dropdownOpen, setDropdownOpen] = React.useState(false)
-  const toggle = () => setDropdownOpen((prevState) => !prevState)
   React.useEffect(() => {
     window.addEventListener('scroll', changeColor)
     return function cleanup() {
@@ -54,11 +51,6 @@ export default function IndexNavbar() {
   }
   const onCollapseExited = () => {
     setCollapseOut('')
-  }
-  const scrollToDownload = () => {
-    document
-      .getElementById('download-section')
-      .scrollIntoView({ behavior: 'smooth' })
   }
   return (
     <Navbar className={'fixed-top ' + color} color-on-scroll='100' expand='lg'>
@@ -123,13 +115,19 @@ export default function IndexNavbar() {
               </DropdownToggle>
               <DropdownMenu className='dropdown-with-icons'>
                 <DropdownItem onClick={() => changeLanguage('en')}>
-                  <i className='flag-icon flag-icon-gb' /> English
+                  <p className='d-lg-none d-xl-none'>
+                    <i className='flag-icon flag-icon-gb' /> English
+                  </p>
                 </DropdownItem>
                 <DropdownItem onClick={() => changeLanguage('pt')}>
-                  <i className='flag-icon flag-icon-br' /> Português
+                  <p className='d-lg-none d-xl-none'>
+                    <i className='flag-icon flag-icon-br' /> Português
+                  </p>
                 </DropdownItem>
                 <DropdownItem onClick={() => changeLanguage('it')}>
-                  <i className='flag-icon flag-icon-it' /> Italiano
+                  <p className='d-lg-none d-xl-none'>
+                    <i className='flag-icon flag-icon-it' /> Italiano
+                  </p>
                 </DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
