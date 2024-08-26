@@ -85,12 +85,7 @@ export default function IndexNavbar() {
         >
           <div className='navbar-collapse-header'>
             <Row>
-              <Col className='collapse-brand' xs='6'>
-                <a href='#contact' onClick={(e) => e.preventDefault()}>
-                  Contatos
-                </a>
-              </Col>
-              <Col className='collapse-close text-right' xs='6'>
+              <Col className='collapse-close text-right'>
                 <button
                   aria-expanded={collapseOpen}
                   className='navbar-toggler'

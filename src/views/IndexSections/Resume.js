@@ -1,6 +1,7 @@
 import useTranslation from 'hooks/useTranslation'
 import React, { useRef, useEffect } from 'react'
-import { Container, Row, Col } from 'reactstrap'
+import { Container, Row, Col, CardBody, CardHeader, Card } from 'reactstrap'
+import StepsOfPrescription from './StepsOfPrescription'
 
 export default function Resume() {
   const iframeRef = useRef(null)
@@ -44,46 +45,60 @@ export default function Resume() {
         src={require('assets/img/path5.png')}
       />
       <div className='section'>
-        <Container>
-          <Row className='justify-content-between align-items-top'>
-            <Col className='mb-5 mb-lg-0' lg='5'>
+        <Col className='ml-auto mr-auto' lg='4' md='6'>
+          <Card className='card-coin card-plain'>
+            <CardHeader>
+              <img
+                alt='...'
+                className='img-center img-fluid rounded-circle'
+                src={require('assets/img/Bianca-profile.jpeg')}
+              />
               <div className='title'>
                 <h1>{t('whoIAm')}</h1>
               </div>
-              <h3 className='text-white font-weight-light mb-1'>
-                {t('physicalEducationTeacher')}
-              </h3>
-              <p className='text-white mt-1'>
-                {t('physicalEducationDescription')}
-              </p>
+            </CardHeader>
+            <CardBody>
+              <Container>
+                <Row className='justify-content-between align-items-top'>
+                  <Col className='mb-5 mb-lg-0' lg='5'>
+                    <h3 className='text-white font-weight-light mb-1'>
+                      {t('physicalEducationTeacher')}
+                    </h3>
+                    <p className='text-white mt-1'>
+                      {t('physicalEducationDescription')}
+                    </p>
 
-              <h3 className='text-white font-weight-light mb-1 mt-4'>
-                {t('specialistTitle')}
-              </h3>
-              <p className='text-white mt-1'>
-                {t('specialistFullDescription')}
-              </p>
-            </Col>
-            <Col lg='6'>
-              <div
-                ref={iframeDivRef}
-                className='embed-responsive iframe embed-responsive-1by1'
-                style={{ height: '0px' }}
-              >
-                <iframe
-                  ref={iframeRef}
-                  src='https://www.instagram.com/p/C-WDISAhAzd/embed'
-                  title='InstagramPost'
-                  className='embed-responsive-item'
-                  style={{
-                    height: '0px',
-                  }}
-                ></iframe>
-              </div>
-            </Col>
-          </Row>
-        </Container>
+                    <h3 className='text-white font-weight-light mb-1 mt-4'>
+                      {t('specialistTitle')}
+                    </h3>
+                    <p className='text-white mt-1'>
+                      {t('specialistFullDescription')}
+                    </p>
+                  </Col>
+                  <Col lg='6'>
+                    <div
+                      ref={iframeDivRef}
+                      className='embed-responsive iframe embed-responsive-1by1'
+                      style={{ height: '0px' }}
+                    >
+                      <iframe
+                        ref={iframeRef}
+                        src='https://www.instagram.com/p/C-WDISAhAzd/embed'
+                        title='InstagramPost'
+                        className='embed-responsive-item'
+                        style={{
+                          height: '0px',
+                        }}
+                      ></iframe>
+                    </div>
+                  </Col>
+                </Row>
+              </Container>
+            </CardBody>
+          </Card>
+        </Col>
       </div>
+      <StepsOfPrescription />
     </div>
   )
 }

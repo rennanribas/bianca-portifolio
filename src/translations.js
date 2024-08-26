@@ -15,6 +15,19 @@ const translations = {
     followOnInstagram: 'Follow on Instagram',
     followOnFacebook: 'Follow on Facebook',
     getInTouch: 'Get in touch',
+    stepsOfPrescriptionTitle: 'How does online consulting work?',
+    step1Title: 'Questionnaire',
+    step1Description:
+      'A questionnaire will be sent for you to fill out with information about your training history, health status, goals, routine, and limitations.',
+    step2Title: 'Assessment',
+    step2Description:
+      'Then a manual will be sent for you to record photos and measurements of your body.',
+    step3Title: 'Delivery',
+    step3Description:
+      'The training plan will be delivered on the platform, which contains detailed explanations of each exercise and clear instructions on how to perform them correctly.',
+    step4Title: 'Alignment',
+    step4Description:
+      'With each update sent, I will make a new assessment, and if necessary, we will adjust the training plan. My goal is to achieve your objectives.',
   },
   pt: {
     personalTrainer: 'Personal Trainer',
@@ -32,6 +45,19 @@ const translations = {
     followOnInstagram: 'Siga no Instagram',
     followOnFacebook: 'Siga no Facebook',
     getInTouch: 'Entre em contato',
+    stepsOfPrescriptionTitle: 'Como funciona a consultoria on-line?',
+    step1Title: 'Questionário',
+    step1Description:
+      'Um questionário será enviado para você preencher com informações sobre sua história de treinamento, estado de saúde, objetivos, rotina e limitações.',
+    step2Title: 'Avaliação',
+    step2Description:
+      'Então será enviado um manual para você faça o registro das fotos e medidas do seu corpo.',
+    step3Title: 'Entrega',
+    step3Description:
+      'O plano de treino será entregue na plataforma, onde contém explicações detalhadas de cada exercício e instruções claras sobre como executá-los corretamente.',
+    step4Title: 'Alinhamento',
+    step4Description:
+      'A cada atualização que for enviada, farei uma nova avaliação, e se necessário, ajustaremos o plano de treino. Meu objetivo é alcançar os seus objetivos, então acompanharei você nesse processo, para que você não desista.',
   },
   it: {
     personalTrainer: 'Personal Trainer',
@@ -47,6 +73,19 @@ const translations = {
     followOnFacebook: 'Seguici su Facebook',
     getInTouch: 'Mettiti in contatto',
     homePage: 'Pagina Iniziale',
+    stepsOfPrescriptionTitle: 'Come funziona la consulenza online?',
+    step1Title: 'Questionario',
+    step1Description:
+      'Ti verrà inviato un questionario da compilare con informazioni sulla tua storia di allenamento, stato di salute, obiettivi, routine e limitazioni.',
+    step2Title: 'Valutazione',
+    step2Description:
+      'Poi ti verrà inviato un manuale per registrare foto e misure del tuo corpo.',
+    step3Title: 'Consegna',
+    step3Description:
+      'Il piano di allenamento sarà consegnato sulla piattaforma, che contiene spiegazioni dettagliate di ogni esercizio e istruzioni chiare su come eseguirli correttamente.',
+    step4Title: 'Allineamento',
+    step4Description:
+      'Ad ogni aggiornamento inviato, farò una nuova valutazione e, se necessario, adatteremo il piano di allenamento. Il mio obiettivo è raggiungere i tuoi obiettivi, quindi ti accompagnerò in questo processo, in modo che tu non ti arrenda.',
   },
 }
 
