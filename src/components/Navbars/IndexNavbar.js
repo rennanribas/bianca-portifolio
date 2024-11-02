@@ -56,13 +56,7 @@ export default function IndexNavbar() {
     <Navbar className={'fixed-top ' + color} color-on-scroll='100' expand='lg'>
       <Container>
         <div className='navbar-translate'>
-          <NavbarBrand to='/' tag={Link} id='navbar-brand'>
-            <img
-              alt='logo'
-              src={require('assets/img/logo-white.png')}
-              style={{ width: '50%' }}
-            />
-          </NavbarBrand>
+          <NavbarBrand to='/' tag={Link} id='navbar-brand'></NavbarBrand>
           <UncontrolledTooltip placement='bottom' target='navbar-brand'>
             Coded by Rennan Ribas
           </UncontrolledTooltip>

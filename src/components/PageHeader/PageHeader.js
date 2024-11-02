@@ -34,6 +34,11 @@ export default function PageHeader() {
       <div className='squares square7' />
       <Container>
         <div className='content-center brand'>
+          <img
+            alt='...'
+            className='img-center img-fluid rounded-circle'
+            src={require('assets/img/mazal-logo-5.png')}
+          />
           <h1 className='h1-seo'>{t('personalTrainer')}</h1>
           <h3 className='d-none d-sm-block'>{t('specialistDescription')}</h3>
         </div>

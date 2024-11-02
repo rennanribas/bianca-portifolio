@@ -30,34 +30,41 @@ const translations = {
       'With each update sent, I will make a new assessment, and if necessary, we will adjust the training plan. My goal is to achieve your objectives.',
   },
   pt: {
-    personalTrainer: 'Personal Trainer',
+    personalTrainer: 'Mazal',
     specialistDescription:
-      'Especialista em treinamento físico para mulheres de todas as idades',
-    whoIAm: 'Quem sou',
-    physicalEducationTeacher: 'Professora de Educação Física',
+      'Software inteligente para criar planilhas e rotinas de treino',
+    whoIAm: 'Sobre o Aplicativo',
+    physicalEducationTeacher:
+      'Inteligência artificial com grande base de dados',
     physicalEducationDescription:
-      'Formada em 2014, pela Universidade de Mogi das Cruzes, conto com a experiência de mais de 10 anos de prática física voltada ao condicionamento físico principalmente através do treinamento resistido com pesos e funcional.',
-    specialistTitle: 'Especialista em Treinamento para Grupos Especiais',
+      'Crie planilhas e rotinas de treino de forma fácil.',
+    specialistTitle: 'Aplicativo totalmente gratuito',
     specialistFullDescription:
-      'Pós graduada em Medicina do Esporte da Atividade Física, conto também com a experiência prática de trabalhar com grupos especiais, ajudando a manter ou melhorar o condicionamento que busca uma melhora da qualidade de vida em grupos especiais.',
+      'O aplicativo já nasce com a iniciativa de ser gratuito, possibilitando a inclusão de todos que não têm acesso a plataformas de treino e informações concisas. No futuro será possível realizar a troca ou venda de planilhas através da própria plataforma, solução esta que irá possibilitar a escala do aplicativo sem cobrar nada para os usuários, apenas uma taxa daqueles que quiserem usar o pagamento interno para disponibilizarem suas planilhas.',
     homePage: 'Página Inicial',
     contact: 'Contato',
     followOnInstagram: 'Siga no Instagram',
     followOnFacebook: 'Siga no Facebook',
     getInTouch: 'Entre em contato',
-    stepsOfPrescriptionTitle: 'Como funciona a consultoria on-line?',
-    step1Title: 'Questionário',
+    stepsOfPrescriptionTitle: 'Como funciona o aplicativo?',
+    step1Title: 'Criação da Planilha',
     step1Description:
-      'Um questionário será enviado para você preencher com informações sobre sua história de treinamento, estado de saúde, objetivos, rotina e limitações.',
-    step2Title: 'Avaliação',
+      'Crie sua própria planilha de treino manualmente ou utilize a inteligência artificial para preenchê-la automaticamente com base em seus dados pessoais e objetivos.',
+    step2Title: 'Personalização',
     step2Description:
-      'Então será enviado um manual para você faça o registro das fotos e medidas do seu corpo.',
-    step3Title: 'Entrega',
+      'Personalize seu treino escolhendo repetições, séries, metodologias, duração e outros parâmetros que se adequem às suas necessidades.',
+    step3Title: 'Integração de Dados',
     step3Description:
-      'O plano de treino será entregue na plataforma, onde contém explicações detalhadas de cada exercício e instruções claras sobre como executá-los corretamente.',
-    step4Title: 'Alinhamento',
+      'Utilizamos seus treinos anteriores, informações de saúde e avaliações físicas para oferecer sugestões mais precisas e eficientes.',
+    step4Title: 'Ambiente de Teste',
     step4Description:
-      'A cada atualização que for enviada, farei uma nova avaliação, e se necessário, ajustaremos o plano de treino. Meu objetivo é alcançar os seus objetivos, então acompanharei você nesse processo, para que você não desista.',
+      'O aplicativo já está funcionando em ambientes de teste, garantindo estabilidade e eficiência antes do lançamento oficial.',
+    step5Title: 'Últimos Ajustes',
+    step5Description:
+      'Estamos finalizando os ajustes de lançamento e integração de pagamentos para proporcionar a melhor experiência ao usuário.',
+    step6Title: 'Lançamento',
+    step6Description:
+      'O lançamento oficial está previsto para 10/11/2024 nas lojas Apple e Android. Fique atento para baixar o aplicativo e começar a utilizar todas as funcionalidades.',
   },
   it: {
     personalTrainer: 'Personal Trainer',

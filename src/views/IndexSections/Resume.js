@@ -1,7 +1,43 @@
 import useTranslation from 'hooks/useTranslation'
 import React, { useRef, useEffect } from 'react'
-import { Container, Row, Col, CardBody, CardHeader, Card } from 'reactstrap'
+import {
+  Container,
+  Row,
+  Col,
+  CardBody,
+  CardHeader,
+  Card,
+  UncontrolledCarousel,
+} from 'reactstrap'
 import StepsOfPrescription from './StepsOfPrescription'
+
+const carouselItems = [
+  {
+    src: require('assets/img/prints/login-white.png'),
+    altText: 'Slide 1',
+    caption: '',
+  },
+  {
+    src: require('assets/img/prints/login-dark.png'),
+    altText: 'Slide 2',
+    caption: '',
+  },
+  {
+    src: require('assets/img/prints/workout-creation.png'),
+    altText: 'Slide 3',
+    caption: '',
+  },
+  {
+    src: require('assets/img/prints/workout-using.png'),
+    altText: 'Slide 4',
+    caption: '',
+  },
+  {
+    src: require('assets/img/prints/profile.png'),
+    altText: 'Slide 4',
+    caption: '',
+  },
+]
 
 export default function Resume() {
   const iframeRef = useRef(null)
@@ -48,11 +84,6 @@ export default function Resume() {
         <Col className='ml-auto mr-auto' lg='4' md='6'>
           <Card className='card-coin card-plain'>
             <CardHeader>
-              <img
-                alt='...'
-                className='img-center img-fluid rounded-circle'
-                src={require('assets/img/Bianca-profile.jpeg')}
-              />
               <div className='title'>
                 <h1>{t('whoIAm')}</h1>
               </div>
@@ -61,7 +92,12 @@ export default function Resume() {
               <Container>
                 <Row className='justify-content-between align-items-top'>
                   <Col className='mb-5 mb-lg-0' lg='5'>
-                    <h3 className='text-white font-weight-light mb-1'>
+                    <UncontrolledCarousel
+                      items={carouselItems}
+                      indicators={true}
+                      autoPlay={true}
+                    />
+                    <h3 className='text-white font-weight-light mb-1 mt-4'>
                       {t('physicalEducationTeacher')}
                     </h3>
                     <p className='text-white mt-1'>
@@ -74,23 +110,6 @@ export default function Resume() {
                     <p className='text-white mt-1'>
                       {t('specialistFullDescription')}
                     </p>
-                  </Col>
-                  <Col lg='6'>
-                    <div
-                      ref={iframeDivRef}
-                      className='embed-responsive iframe embed-responsive-1by1'
-                      style={{ height: '0px' }}
-                    >
-                      <iframe
-                        ref={iframeRef}
-                        src='https://www.instagram.com/p/C-WDISAhAzd/embed'
-                        title='InstagramPost'
-                        className='embed-responsive-item'
-                        style={{
-                          height: '0px',
-                        }}
-                      ></iframe>
-                    </div>
                   </Col>
                 </Row>
               </Container>

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Row, Col } from 'reactstrap'
+import { Container, Row } from 'reactstrap'
 import useTranslation from 'hooks/useTranslation'
 
 export default function StepsOfPrescription() {
@@ -25,6 +25,16 @@ export default function StepsOfPrescription() {
       number: '04',
       title: t('step4Title'),
       description: t('step4Description'),
+    },
+    {
+      number: '05',
+      title: t('step5Title'),
+      description: t('step5Description'),
+    },
+    {
+      number: '06',
+      title: t('step6Title'),
+      description: t('step6Description'),
     },
   ]
 
