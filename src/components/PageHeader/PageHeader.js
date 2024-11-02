@@ -1,28 +1,21 @@
-/*!
-
-=========================================================
-* BLK Design System React - v1.2.2
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/blk-design-system-react
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/blk-design-system-react/blob/main/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import useTranslation from 'hooks/useTranslation'
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 
 // reactstrap components
 import { Container } from 'reactstrap'
 
 export default function PageHeader() {
   const t = useTranslation()
+  const [rotation, setRotation] = useState(0)
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setRotation((prevRotation) => prevRotation + 1)
+    }, 50)
+
+    return () => clearInterval(interval)
+  }, [])
+
   return (
     <div className='page-header header-filter'>
       <div className='squares square1' />
@@ -38,6 +31,7 @@ export default function PageHeader() {
             alt='...'
             className='img-center img-fluid rounded-circle'
             src={require('assets/img/mazal-logo-5.png')}
+            style={{ transform: `rotate(${rotation}deg)` }}
           />
           <h1 className='h1-seo'>{t('personalTrainer')}</h1>
           <h3 className='d-none d-sm-block'>{t('specialistDescription')}</h3>
